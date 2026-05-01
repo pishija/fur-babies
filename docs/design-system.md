@@ -5,13 +5,13 @@
 FurBabies uses a two-layer design token pipeline:
 
 ```
-Pencil (.pen file)
-    ↓  npm run extract (scripts/extract-from-pencil.js)
-design-tokens/tokens/*.json   ← source of truth, committed to git
-    ↓  npm run tokens (Style Dictionary)
+design/FurBabies.pen                                      ← Pencil source file, edited in Pencil
+    ↓  swift design-tokens/ExtractFromPencil.swift design/FurBabies.pen
+design-tokens/tokens/*.json                               ← source of truth, committed to git
+    ↓  swift design-tokens/GenerateTheme.swift
 FurBabies/Shared/Theme/Generated/GeneratedTokens.swift   ← auto-generated, committed to git
     ↓  imported by
-FurBabies/Shared/Theme/Theme.swift   ← hand-written semantic wrapper, never auto-generated
+FurBabies/Shared/Theme/Theme.swift                        ← hand-written semantic wrapper
     ↓  imported by
 All SwiftUI views
 ```
@@ -25,7 +25,7 @@ All SwiftUI views
 When design decisions change in Pencil, run both scripts from the project root:
 
 ```bash
-swift design-tokens/ExtractFromPencil.swift path/to/FurBabies.pen
+swift design-tokens/ExtractFromPencil.swift design/FurBabies.pen
 swift design-tokens/GenerateTheme.swift
 ```
 
@@ -248,7 +248,7 @@ For the extraction script to map Pencil variables correctly, name variables in P
 ## Adding a new token
 
 1. Add the variable in Pencil with the correct naming convention
-2. Run `swift design-tokens/ExtractFromPencil.swift path/to/FurBabies.pen`
+2. Run `swift design-tokens/ExtractFromPencil.swift design/FurBabies.pen`
 3. Run `swift design-tokens/GenerateTheme.swift` → `GeneratedTokens.swift` is updated
 4. Add a semantic alias in `Theme.swift` if needed
 5. Commit `tokens/*.json`, `GeneratedTokens.swift`, and `Theme.swift`

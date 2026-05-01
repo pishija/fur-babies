@@ -1,31 +1,82 @@
 {
-  "color": {
-    "brand": {
-      "primary":   { "value": "#E8622A", "type": "color", "comment": "Main brand color — replace via Pencil" },
-      "secondary": { "value": "#3D7EAA", "type": "color", "comment": "Supporting brand color" },
-      "accent":    { "value": "#F5A623", "type": "color", "comment": "Accent / highlight color" }
+  "color" : {
+    "background" : {
+      "default" : {
+        "type" : "color",
+        "value" : "#FAFAF7"
+      },
+      "muted" : {
+        "type" : "color",
+        "value" : "#F0EDE8"
+      },
+      "surface" : {
+        "type" : "color",
+        "value" : "#FFFFFF"
+      }
     },
-    "background": {
-      "default": { "value": "#FAFAF8", "type": "color" },
-      "surface":  { "value": "#FFFFFF", "type": "color" },
-      "muted":    { "value": "#F0EDE8", "type": "color" }
+    "border" : {
+      "default" : {
+        "type" : "color",
+        "value" : "#E7E5E4"
+      },
+      "strong" : {
+        "type" : "color",
+        "value" : "#D6D3D1"
+      }
     },
-    "text": {
-      "primary":   { "value": "#1A1A1A", "type": "color" },
-      "secondary": { "value": "#6B6B6B", "type": "color" },
-      "tertiary":  { "value": "#9B9B9B", "type": "color" },
-      "inverse":   { "value": "#FFFFFF", "type": "color" },
-      "onBrand":   { "value": "#FFFFFF", "type": "color" }
+    "brand" : {
+      "accent" : {
+        "type" : "color",
+        "value" : "#F06B6B"
+      },
+      "primary" : {
+        "type" : "color",
+        "value" : "#E8913A"
+      },
+      "secondary" : {
+        "type" : "color",
+        "value" : "#2A6B5E"
+      }
     },
-    "border": {
-      "default": { "value": "#E0DDD8", "type": "color" },
-      "strong":  { "value": "#C4C0BB", "type": "color" }
+    "status" : {
+      "error" : {
+        "type" : "color",
+        "value" : "#DC2626"
+      },
+      "info" : {
+        "type" : "color",
+        "value" : "#3B82F6"
+      },
+      "success" : {
+        "type" : "color",
+        "value" : "#16A34A"
+      },
+      "warning" : {
+        "type" : "color",
+        "value" : "#F59E0B"
+      }
     },
-    "status": {
-      "error":   { "value": "#D93025", "type": "color" },
-      "success": { "value": "#1E8B4F", "type": "color" },
-      "warning": { "value": "#E8962A", "type": "color" },
-      "info":    { "value": "#2563EB", "type": "color" }
+    "text" : {
+      "inverse" : {
+        "type" : "color",
+        "value" : "#FFFFFF"
+      },
+      "onBrand" : {
+        "type" : "color",
+        "value" : "#FFFFFF"
+      },
+      "primary" : {
+        "type" : "color",
+        "value" : "#1C1917"
+      },
+      "secondary" : {
+        "type" : "color",
+        "value" : "#57534E"
+      },
+      "tertiary" : {
+        "type" : "color",
+        "value" : "#A8A29E"
+      }
     }
   }
 }

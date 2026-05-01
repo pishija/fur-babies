@@ -1,9 +1,24 @@
 {
-  "radius": {
-    "sm":   { "value": 8,   "type": "dimension" },
-    "md":   { "value": 12,  "type": "dimension" },
-    "lg":   { "value": 16,  "type": "dimension" },
-    "xl":   { "value": 24,  "type": "dimension" },
-    "full": { "value": 999, "type": "dimension" }
+  "radius" : {
+    "full" : {
+      "type" : "dimension",
+      "value" : 9999
+    },
+    "lg" : {
+      "type" : "dimension",
+      "value" : 12
+    },
+    "md" : {
+      "type" : "dimension",
+      "value" : 8
+    },
+    "sm" : {
+      "type" : "dimension",
+      "value" : 4
+    },
+    "xl" : {
+      "type" : "dimension",
+      "value" : 16
+    }
   }
 }

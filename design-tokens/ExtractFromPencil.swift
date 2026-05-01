@@ -39,9 +39,9 @@ else {
     exit(1)
 }
 
-guard let variables = penJSON["variables"] as? [[String: Any]], !variables.isEmpty else {
-    print("❌  No 'variables' array found in .pen file.")
-    print("    Expected: { \"variables\": [{ \"name\": \"--color-brand-primary\", \"value\": \"#E8622A\" }] }")
+// .pen variables are stored as a dictionary: { "--var-name": { "type": "color"|"number"|"string", "value": ... } }
+guard let variables = penJSON["variables"] as? [String: Any], !variables.isEmpty else {
+    print("❌  No 'variables' dictionary found in .pen file.")
     exit(1)
 }
 
@@ -51,8 +51,10 @@ func kebabToCamel(_ s: String) -> String {
     return parts[0] + parts.dropFirst().map { $0.prefix(1).uppercased() + $0.dropFirst() }.joined()
 }
 
-func parsePx(_ s: String) -> Double {
-    Double(s.replacingOccurrences(of: "px", with: "").trimmingCharacters(in: .whitespaces)) ?? 0
+func numericValue(_ entry: [String: Any]) -> Double {
+    if let n = entry["value"] as? NSNumber { return n.doubleValue }
+    if let s = entry["value"] as? String   { return Double(s.replacingOccurrences(of: "px", with: "")) ?? 0 }
+    return 0
 }
 
 var colorGroups: [String: [String: [String: Any]]] = [:]
@@ -61,9 +63,8 @@ var fontSizes:   [String: [String: Any]] = [:]
 var fontWeights: [String: [String: Any]] = [:]
 var radii:       [String: [String: Any]] = [:]
 
-for variable in variables {
-    guard let rawName = variable["name"] as? String else { continue }
-    let rawValue = variable["value"] as? String ?? String(describing: variable["value"] ?? "")
+for (rawName, rawEntry) in variables {
+    guard let entry = rawEntry as? [String: Any] else { continue }
     let name = rawName.hasPrefix("--") ? String(rawName.dropFirst(2)) : rawName
 
     if name.hasPrefix("color-") {
@@ -72,24 +73,25 @@ for variable in variables {
         guard !parts.isEmpty else { continue }
         let group = parts[0]
         let item  = parts.count > 1 ? kebabToCamel(parts.dropFirst().joined(separator: "-")) : "default"
+        let hex   = entry["value"] as? String ?? "#000000"
         if colorGroups[group] == nil { colorGroups[group] = [:] }
-        colorGroups[group]![item] = ["value": rawValue, "type": "color"]
+        colorGroups[group]![item] = ["value": hex, "type": "color"]
 
     } else if name.hasPrefix("spacing-") {
         let item = kebabToCamel(String(name.dropFirst("spacing-".count)))
-        spacing[item] = ["value": parsePx(rawValue), "type": "dimension"]
+        spacing[item] = ["value": numericValue(entry), "type": "dimension"]
 
     } else if name.hasPrefix("font-size-") {
         let item = kebabToCamel(String(name.dropFirst("font-size-".count)))
-        fontSizes[item] = ["value": parsePx(rawValue), "type": "dimension"]
+        fontSizes[item] = ["value": numericValue(entry), "type": "dimension"]
 
     } else if name.hasPrefix("font-weight-") {
         let item = kebabToCamel(String(name.dropFirst("font-weight-".count)))
-        fontWeights[item] = ["value": Double(rawValue) ?? 400, "type": "number"]
+        fontWeights[item] = ["value": numericValue(entry), "type": "number"]
 
     } else if name.hasPrefix("radius-") {
         let item = kebabToCamel(String(name.dropFirst("radius-".count)))
-        radii[item] = ["value": parsePx(rawValue), "type": "dimension"]
+        radii[item] = ["value": numericValue(entry), "type": "dimension"]
     }
 }
 
