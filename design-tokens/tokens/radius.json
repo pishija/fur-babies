@@ -1,0 +1,9 @@
+{
+  "radius": {
+    "sm":   { "value": 8,   "type": "dimension" },
+    "md":   { "value": 12,  "type": "dimension" },
+    "lg":   { "value": 16,  "type": "dimension" },
+    "xl":   { "value": 24,  "type": "dimension" },
+    "full": { "value": 999, "type": "dimension" }
+  }
+}

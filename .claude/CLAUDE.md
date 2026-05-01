@@ -108,6 +108,7 @@ FurBabies/
 
 **Clean Architecture + MVVM + Unidirectional Data Flow.** Full spec in `docs/ios-architecture.md`.
 **Navigation system** — full spec in `docs/navigation.md`.
+**Design system + tokens** — full spec in `docs/design-system.md`.
 
 ```
 View → ViewModel → Use Case → Repository Protocol ← (Firebase impl | REST impl | Local impl)
@@ -269,7 +270,7 @@ liveWalks/                ephemeral live GPS records (Firebase Realtime Database
 - **Errors are always surfaced to the user** via a `@Published var errorMessage: String?` on the ViewModel, shown as a toast or alert in the View.
 - **Loading states** are always represented by a `@Published var isLoading: Bool` on the ViewModel.
 - **Strings are not hardcoded** in views — use a `Strings` enum or constant file (implementation detail: keep it simple, no localisation system needed in v1).
-- **Colours and fonts** come from the `Theme` constants — never use raw hex values in views.
+- **Colours, fonts, spacing, and radius** come exclusively from `Theme` (e.g. `Theme.Colors.primary`, `Theme.Typography.body`, `Theme.Spacing.md`) — never use raw hex values, hardcoded numbers, or system colors in views. `Theme` wraps auto-generated `GeneratedTokens` which is built from `design-tokens/tokens/*.json`. Full pipeline in `docs/design-system.md`.
 - **SwiftUI previews** are written for every View component.
 
 ---

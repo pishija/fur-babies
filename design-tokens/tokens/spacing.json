@@ -1,0 +1,12 @@
+{
+  "spacing": {
+    "xxs": { "value": 4,  "type": "dimension" },
+    "xs":  { "value": 8,  "type": "dimension" },
+    "sm":  { "value": 12, "type": "dimension" },
+    "md":  { "value": 16, "type": "dimension" },
+    "lg":  { "value": 24, "type": "dimension" },
+    "xl":  { "value": 32, "type": "dimension" },
+    "xxl": { "value": 48, "type": "dimension" },
+    "xxxl":{ "value": 64, "type": "dimension" }
+  }
+}
