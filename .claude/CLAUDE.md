@@ -107,6 +107,7 @@ FurBabies/
 ## Architecture pattern
 
 **Clean Architecture + MVVM + Unidirectional Data Flow.** Full spec in `docs/ios-architecture.md`.
+**Navigation system** — full spec in `docs/navigation.md`.
 
 ```
 View → ViewModel → Use Case → Repository Protocol ← (Firebase impl | REST impl | Local impl)
@@ -127,6 +128,77 @@ View → ViewModel → Use Case → Repository Protocol ← (Firebase impl | RES
 - **Firebase imports are banned outside `Data/Repositories/Firebase/`.**
 - Use `async/await` for sequential operations. Use `Combine` only for multi-stream reactive work (e.g. live chat listeners).
 - All ViewModel updates happen on `@MainActor`.
+
+---
+
+## Navigation
+
+FurBabies uses a custom type-safe router — **never use `NavigationLink` or SwiftUI's native navigation directly**. All navigation goes through `AppRouter`. Full spec and patterns in `docs/navigation.md`.
+
+### URL scheme
+```
+furbabies://[route-path]?[params]
+```
+
+### How to navigate
+
+```swift
+// Push a screen onto the stack
+router.push(DogProfileRoute(dogId: "abc"))
+
+// Present a modal sheet
+router.present(CreateDogRoute())
+
+// Present a modal and wait for a result
+let result = await router.presentForResult(HealthEventRoute(), expecting: HealthEventResult.self)
+
+// Deep link / push notification tap
+router.open(URL(string: "furbabies://dog-profile?dogId=abc")!)
+```
+
+### Route requirements
+
+Protected routes declare their requirements in their `RouteRegistry`. Two requirement types apply across FurBabies:
+
+| Requirement | When triggered |
+|---|---|
+| `RequiresAuth` | Any route that needs a logged-in user — applied to all main tab routes |
+| `RequiresOnboarding` | Routes that need at least one dog profile — applied to all feature routes |
+
+If requirements are not met, `AppRouter` silently blocks navigation and the auth / onboarding flow is shown instead.
+
+### One registry per feature
+
+Each feature defines its own `RouteRegistry` and registers its routes there. The `AppRouteRegistry` composes them all:
+
+```swift
+AppRouteRegistry(registries: [
+    AuthRouteRegistry(),
+    DogProfileRouteRegistry(),
+    AIFriendRouteRegistry(),
+    HealthCalendarRouteRegistry(),
+    MatchingRouteRegistry(),
+    WalkMapRouteRegistry(),
+    PlacesRouteRegistry(),
+    GamificationRouteRegistry(),
+    EventsRouteRegistry(),
+    ExhibitionsRouteRegistry(),
+])
+```
+
+### Route file location
+
+Routes, registries, and route result types for each feature live in:
+```
+Features/{FeatureName}/Presentation/Navigation/
+```
+
+### AppView states
+
+The root `AppView` switches on `AppViewModel.applicationState`:
+- `.initializing` → splash screen
+- `.unauthenticated` → onboarding + auth screens (no router active)
+- `.authenticated` → `NavigationStack` with tab bar as root + `.sheet` for modals
 
 ---
 
@@ -208,6 +280,7 @@ Read the relevant doc before building any feature. Each doc defines screens, use
 
 | Feature | Doc |
 |---|---|
+| Authentication | `docs/features/00-auth.md` |
 | Dog Profile + Onboarding | `docs/features/01-dog-profile.md` |
 | Virtual AI Friend | `docs/features/02-ai-friend.md` |
 | Health Calendars | `docs/features/03-health-calendars.md` |
@@ -217,6 +290,8 @@ Read the relevant doc before building any feature. Each doc defines screens, use
 | Gamification | `docs/features/07-gamification.md` |
 | Events | `docs/features/08-events.md` |
 | Exhibitions | `docs/features/09-exhibitions.md` |
+| Me / Owner Account | `docs/features/10-me-owner.md` |
+| Push Notifications | `docs/features/11-notifications.md` |
 
 The product overview and build priorities (Day 1 core → v1.0 → v2.0) are in `FurBabies_Specification.md`.
 
