@@ -1,0 +1,78 @@
+# ===== macOS =====
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# ===== Xcode =====
+# Build products
+build/
+DerivedData/
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+
+# User-specific settings
+xcuserdata/
+*.xcuserstate
+*.xcscmblueprint
+
+# Xcode workspace settings (shared schemes are okay to commit)
+*.xcworkspace/xcuserdata/
+*.xcworkspace/xcshareddata/swiftpm/
+
+# Playgrounds
+timeline.xctimeline
+playground.xcworkspace
+
+# Xcode Previews
+.preview-cache/
+
+# ===== Swift Package Manager =====
+.build/
+.swiftpm/xcode/package.xcworkspace/xcuserdata/
+# Resolve files are committed for apps (not libraries)
+# Package.resolved
+
+# ===== CocoaPods (if ever used) =====
+Pods/
+*.xcworkspace
+
+# ===== Carthage (if ever used) =====
+Carthage/Build/
+
+# ===== Firebase =====
+# Never commit — add to project manually or via CI secrets
+GoogleService-Info.plist
+
+# ===== Environment & secrets =====
+.env
+.env.*
+*.p8
+*.p12
+*.pem
+Secrets.swift
+APIKeys.swift
+
+# ===== Fastlane =====
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots/**/*.png
+fastlane/test_output/
+
+# ===== Code coverage =====
+*.gcno
+*.gcda
+
+# ===== Archives =====
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+# ===== SPM checksums =====
+.package.resolved.backup
