@@ -42,7 +42,7 @@ func swiftUIColor(hex: String) -> String {
     let r = Double((v >> 16) & 0xFF) / 255
     let g = Double((v >> 8)  & 0xFF) / 255
     let b = Double( v        & 0xFF) / 255
-    return String(format: "Color(.sRGB, red: %.3f, green: %.3f, blue: %.3f, opacity: 1)", r, g, b)
+    return String(format: "SwiftUI.Color(.sRGB, red: %.3f, green: %.3f, blue: %.3f, opacity: 1)", r, g, b)
 }
 
 func numericString(_ value: Any) -> String {
