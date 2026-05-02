@@ -8,55 +8,39 @@
 
 /* Begin PBXBuildFile section */
 		03EEDD12B337A846F5C36391 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 64E52DA9CF7B0F9031325758 /* FirebaseAuth */; };
-		1079D246AB0BBEFC8B3BD67C /* AppRouteRegistry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DE5B10F09D78447DD357ED7 /* AppRouteRegistry.swift */; };
 		15F4408A756E7AEDD559AE25 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = A449FC791CFE69B94E1D66B6 /* FirebaseFirestore */; };
 		1A76A7FFC9BCD2790460E8C4 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = C6DCEBAE0D96651CA53441D8 /* FirebaseStorage */; };
-		1AC9BA99634391CBFD10123D /* AuthFlowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6559FC52CD077FD9246C2B25 /* AuthFlowView.swift */; };
-		20E06C14F9D0138F33AA486A /* RouteResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC764D5D14ECB8C4913BF8D /* RouteResults.swift */; };
-		3636839594324B93CAED9F73 /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B8445127EC5966373F8311 /* Route.swift */; };
-		39B1189FE6E6FAE13A32A295 /* AnyRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9E546F9F9342A028909E6F4 /* AnyRoute.swift */; };
-		3F611CD16D9279E2800E6F61 /* AppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53064541E3D78C53767D1A99 /* AppView.swift */; };
-		47C1FF86D8BC94E252FC6580 /* AppViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5E9E7C3A838D1C6E8576DB /* AppViewModel.swift */; };
-		5E940C1BD503E33572D8E872 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17E5BAE93B20DE2279057FE2 /* Assets.xcassets */; };
-		61A2AFB5DC1FCAD21F7A90C9 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A342F97D169D719F1280AFC0 /* MainTabView.swift */; };
-		64BB02898256F921DE3E6AE3 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82CF7974F36E069E69B30FF8 /* Theme.swift */; };
-		71C95B3F2E9BCCA6022FABDC /* ActiveDogStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9826DEE6FA5FEC00A68E646 /* ActiveDogStore.swift */; };
-		7BA6E42020167F1F47930364 /* RouteRegistry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029244DB082482A5499822BA /* RouteRegistry.swift */; };
-		9072247CBA092533A1D3F8F4 /* DIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115F616FE4E42965EF8215EA /* DIContainer.swift */; };
-		96D169B9355B2157F56CFB1C /* RouteRequirements.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC2EB427849CEABF0DB71D6 /* RouteRequirements.swift */; };
-		A0EB6F22541AA76F48E673BB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D60B9A01DA264E254E2DED /* AppDelegate.swift */; };
-		B389EAD6BE00FDAB30D69B19 /* RouteRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CD0480B50B80F5D29F45747 /* RouteRequest.swift */; };
-		BA4AA40B65F492591E0CF7C1 /* FurBabiesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF69D11F83D9259C98F746EE /* FurBabiesApp.swift */; };
-		CA0E54179D9A59D9F67E38A2 /* GeneratedTokens.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92ED8FFBF3EE2E6D60E66B0 /* GeneratedTokens.swift */; };
-		CCA1AC3BF6B70926B981F149 /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A092074456357D18CF3ADF30 /* AppRouter.swift */; };
 		EA53D807DF761ED83D60B704 /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = 51FFC38F865B8C1A0FE67C2D /* FirebaseMessaging */; };
-		F089B241F7E3558258301331 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE8972419708891123795DF /* SplashView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		029244DB082482A5499822BA /* RouteRegistry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteRegistry.swift; sourceTree = "<group>"; };
-		115F616FE4E42965EF8215EA /* DIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIContainer.swift; sourceTree = "<group>"; };
-		17E5BAE93B20DE2279057FE2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		2AC764D5D14ECB8C4913BF8D /* RouteResults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteResults.swift; sourceTree = "<group>"; };
-		53064541E3D78C53767D1A99 /* AppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppView.swift; sourceTree = "<group>"; };
-		5B5E9E7C3A838D1C6E8576DB /* AppViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppViewModel.swift; sourceTree = "<group>"; };
-		5FE8972419708891123795DF /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
-		6559FC52CD077FD9246C2B25 /* AuthFlowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthFlowView.swift; sourceTree = "<group>"; };
-		65D60B9A01DA264E254E2DED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		6DE5B10F09D78447DD357ED7 /* AppRouteRegistry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouteRegistry.swift; sourceTree = "<group>"; };
-		752ED2C69600424FAF3C65C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		82CF7974F36E069E69B30FF8 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
-		9CD0480B50B80F5D29F45747 /* RouteRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteRequest.swift; sourceTree = "<group>"; };
-		A092074456357D18CF3ADF30 /* AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
-		A342F97D169D719F1280AFC0 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
-		BAC2EB427849CEABF0DB71D6 /* RouteRequirements.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteRequirements.swift; sourceTree = "<group>"; };
-		BF69D11F83D9259C98F746EE /* FurBabiesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FurBabiesApp.swift; sourceTree = "<group>"; };
-		C0B8445127EC5966373F8311 /* Route.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
-		D92ED8FFBF3EE2E6D60E66B0 /* GeneratedTokens.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneratedTokens.swift; sourceTree = "<group>"; };
-		D9E546F9F9342A028909E6F4 /* AnyRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyRoute.swift; sourceTree = "<group>"; };
 		EA2D01A45190E0A9301BA9D1 /* FurBabies.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = FurBabies.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		F9826DEE6FA5FEC00A68E646 /* ActiveDogStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveDogStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		30DC7DD196839541B0DE04A6 /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Resources/Info.plist,
+			);
+			target = A0A39B85DCCA4ACEEA97F74D /* FurBabies */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		1586CEFEA4EFC3C7A2375887 /* FurBabies */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				30DC7DD196839541B0DE04A6 /* PBXFileSystemSynchronizedBuildFileExceptionSet */,
+			);
+			explicitFileTypes = {
+			};
+			explicitFolders = (
+			);
+			path = FurBabies;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		8F7B9FE7F7CB535C82CB4922 /* Frameworks */ = {
@@ -73,69 +57,12 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0880862F5C68075EF5146F79 /* DI */ = {
-			isa = PBXGroup;
-			children = (
-				115F616FE4E42965EF8215EA /* DIContainer.swift */,
-			);
-			path = DI;
-			sourceTree = "<group>";
-		};
 		183A0BC3A605ABC500D2B209 = {
 			isa = PBXGroup;
 			children = (
-				DCF32519A355E168A2E85345 /* FurBabies */,
+				1586CEFEA4EFC3C7A2375887 /* FurBabies */,
 				BAAD29B6A927D95D38AC1837 /* Products */,
 			);
-			sourceTree = "<group>";
-		};
-		300CE5683C9A3FB09EA50F11 /* Theme */ = {
-			isa = PBXGroup;
-			children = (
-				813CA43155B011C73F411BEB /* Generated */,
-				82CF7974F36E069E69B30FF8 /* Theme.swift */,
-			);
-			path = Theme;
-			sourceTree = "<group>";
-		};
-		4A28E0536C2F8FEDF92F5F49 /* Navigation */ = {
-			isa = PBXGroup;
-			children = (
-				D9E546F9F9342A028909E6F4 /* AnyRoute.swift */,
-				A092074456357D18CF3ADF30 /* AppRouter.swift */,
-				6DE5B10F09D78447DD357ED7 /* AppRouteRegistry.swift */,
-				C0B8445127EC5966373F8311 /* Route.swift */,
-				029244DB082482A5499822BA /* RouteRegistry.swift */,
-				9CD0480B50B80F5D29F45747 /* RouteRequest.swift */,
-				BAC2EB427849CEABF0DB71D6 /* RouteRequirements.swift */,
-				2AC764D5D14ECB8C4913BF8D /* RouteResults.swift */,
-			);
-			path = Navigation;
-			sourceTree = "<group>";
-		};
-		58658EE097275ACB94922883 /* Shared */ = {
-			isa = PBXGroup;
-			children = (
-				300CE5683C9A3FB09EA50F11 /* Theme */,
-			);
-			path = Shared;
-			sourceTree = "<group>";
-		};
-		813CA43155B011C73F411BEB /* Generated */ = {
-			isa = PBXGroup;
-			children = (
-				D92ED8FFBF3EE2E6D60E66B0 /* GeneratedTokens.swift */,
-			);
-			path = Generated;
-			sourceTree = "<group>";
-		};
-		AB8BEBE8B9721751B5E7F5E7 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				17E5BAE93B20DE2279057FE2 /* Assets.xcassets */,
-				752ED2C69600424FAF3C65C2 /* Info.plist */,
-			);
-			path = Resources;
 			sourceTree = "<group>";
 		};
 		BAAD29B6A927D95D38AC1837 /* Products */ = {
@@ -144,49 +71,6 @@
 				EA2D01A45190E0A9301BA9D1 /* FurBabies.app */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		CBC48562C48BEA8E0B3242CD /* Core */ = {
-			isa = PBXGroup;
-			children = (
-				D873F94E7C247DE34658145F /* ActiveDog */,
-				0880862F5C68075EF5146F79 /* DI */,
-				4A28E0536C2F8FEDF92F5F49 /* Navigation */,
-			);
-			path = Core;
-			sourceTree = "<group>";
-		};
-		D873F94E7C247DE34658145F /* ActiveDog */ = {
-			isa = PBXGroup;
-			children = (
-				F9826DEE6FA5FEC00A68E646 /* ActiveDogStore.swift */,
-			);
-			path = ActiveDog;
-			sourceTree = "<group>";
-		};
-		DCF32519A355E168A2E85345 /* FurBabies */ = {
-			isa = PBXGroup;
-			children = (
-				E3E3CF52E2DA2CA305F53A8A /* App */,
-				CBC48562C48BEA8E0B3242CD /* Core */,
-				AB8BEBE8B9721751B5E7F5E7 /* Resources */,
-				58658EE097275ACB94922883 /* Shared */,
-			);
-			path = FurBabies;
-			sourceTree = "<group>";
-		};
-		E3E3CF52E2DA2CA305F53A8A /* App */ = {
-			isa = PBXGroup;
-			children = (
-				65D60B9A01DA264E254E2DED /* AppDelegate.swift */,
-				53064541E3D78C53767D1A99 /* AppView.swift */,
-				5B5E9E7C3A838D1C6E8576DB /* AppViewModel.swift */,
-				6559FC52CD077FD9246C2B25 /* AuthFlowView.swift */,
-				BF69D11F83D9259C98F746EE /* FurBabiesApp.swift */,
-				A342F97D169D719F1280AFC0 /* MainTabView.swift */,
-				5FE8972419708891123795DF /* SplashView.swift */,
-			);
-			path = App;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -203,6 +87,9 @@
 			buildRules = (
 			);
 			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				1586CEFEA4EFC3C7A2375887 /* FurBabies */,
 			);
 			name = FurBabies;
 			packageProductDependencies = (
@@ -257,7 +144,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5E940C1BD503E33572D8E872 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,25 +154,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				71C95B3F2E9BCCA6022FABDC /* ActiveDogStore.swift in Sources */,
-				39B1189FE6E6FAE13A32A295 /* AnyRoute.swift in Sources */,
-				A0EB6F22541AA76F48E673BB /* AppDelegate.swift in Sources */,
-				1079D246AB0BBEFC8B3BD67C /* AppRouteRegistry.swift in Sources */,
-				CCA1AC3BF6B70926B981F149 /* AppRouter.swift in Sources */,
-				3F611CD16D9279E2800E6F61 /* AppView.swift in Sources */,
-				47C1FF86D8BC94E252FC6580 /* AppViewModel.swift in Sources */,
-				1AC9BA99634391CBFD10123D /* AuthFlowView.swift in Sources */,
-				9072247CBA092533A1D3F8F4 /* DIContainer.swift in Sources */,
-				BA4AA40B65F492591E0CF7C1 /* FurBabiesApp.swift in Sources */,
-				CA0E54179D9A59D9F67E38A2 /* GeneratedTokens.swift in Sources */,
-				61A2AFB5DC1FCAD21F7A90C9 /* MainTabView.swift in Sources */,
-				3636839594324B93CAED9F73 /* Route.swift in Sources */,
-				7BA6E42020167F1F47930364 /* RouteRegistry.swift in Sources */,
-				B389EAD6BE00FDAB30D69B19 /* RouteRequest.swift in Sources */,
-				96D169B9355B2157F56CFB1C /* RouteRequirements.swift in Sources */,
-				20E06C14F9D0138F33AA486A /* RouteResults.swift in Sources */,
-				F089B241F7E3558258301331 /* SplashView.swift in Sources */,
-				64BB02898256F921DE3E6AE3 /* Theme.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

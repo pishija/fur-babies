@@ -19,7 +19,8 @@ targets:
     platform: iOS
     deploymentTarget: "17.0"
     sources:
-      - FurBabies
+      - path: FurBabies
+        type: syncedFolder
     info:
       path: FurBabies/Resources/Info.plist
       properties:
