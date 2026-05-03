@@ -4,6 +4,7 @@ import os
 enum ApplicationState {
     case initializing
     case unauthenticated
+    case needsFirstDog(userId: String)
     case authenticated
 }
 
@@ -17,12 +18,17 @@ final class AppViewModel: ObservableObject {
     }
 
     private func resolveInitialState() {
-        let hasSession = DIContainer.shared.authService.currentUser != nil
-        applicationState = hasSession ? .authenticated : .unauthenticated
-        AppLogger.app.info("resolveInitialState — \(hasSession ? "authenticated" : "unauthenticated")")
+        guard let user = DIContainer.shared.authService.currentUser else {
+            applicationState = .unauthenticated
+            AppLogger.app.info("resolveInitialState — unauthenticated")
+            return
+        }
+        AppLogger.app.info("resolveInitialState — checking dogs for userId=\(user.id)")
+        Task {
+            await checkDogsAndTransition(userId: user.id)
+        }
     }
 
-    // Watch for token expiry / sign-out triggered outside the app (e.g. account deleted remotely)
     private func observeSignOut() {
         Task { [weak self] in
             for await user in DIContainer.shared.authService.authStateStream {
@@ -36,12 +42,44 @@ final class AppViewModel: ObservableObject {
     }
 
     func markAuthenticated() {
-        AppLogger.app.info("markAuthenticated")
-        applicationState = .authenticated
+        guard let user = DIContainer.shared.authService.currentUser else {
+            applicationState = .unauthenticated
+            return
+        }
+        AppLogger.app.info("markAuthenticated — checking dogs for userId=\(user.id)")
+        Task {
+            await checkDogsAndTransition(userId: user.id)
+        }
     }
 
     func markUnauthenticated() {
         AppLogger.app.info("markUnauthenticated")
         applicationState = .unauthenticated
+    }
+
+    func markDogCreated(dogId: String) {
+        AppLogger.app.info("markDogCreated — dogId=\(dogId)")
+        ActiveDogStore.shared.setActiveDog(dogId)
+        applicationState = .authenticated
+    }
+
+    private func checkDogsAndTransition(userId: String) async {
+        do {
+            let hasDogs = try await DIContainer.shared.fetchDogsUseCase.hasDogs(userId: userId)
+            if hasDogs {
+                let dogs = try await DIContainer.shared.fetchDogsUseCase.execute(userId: userId)
+                if let first = dogs.first {
+                    ActiveDogStore.shared.setActiveDog(first.id)
+                    AppLogger.app.info("checkDogsAndTransition — activeDog=\(first.id)")
+                }
+                applicationState = .authenticated
+            } else {
+                AppLogger.app.info("checkDogsAndTransition — no dogs, needsFirstDog")
+                applicationState = .needsFirstDog(userId: userId)
+            }
+        } catch {
+            AppLogger.app.error("checkDogsAndTransition — dogs check failed: \(error). Defaulting to authenticated.")
+            applicationState = .authenticated
+        }
     }
 }

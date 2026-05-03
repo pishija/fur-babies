@@ -17,6 +17,10 @@ struct AppView: View {
                 SplashView()
             case .unauthenticated:
                 AuthFlowView(onAuthComplete: { viewModel.markAuthenticated() })
+            case .needsFirstDog(let userId):
+                CreateDogFlowView(userId: userId) { dogId in
+                    viewModel.markDogCreated(dogId: dogId)
+                }
             case .authenticated:
                 NavigationStack(path: $router.path) {
                     MainTabView()
@@ -30,6 +34,7 @@ struct AppView: View {
             }
         }
         .environmentObject(router)
+        .environmentObject(ActiveDogStore.shared)
     }
 }
 
