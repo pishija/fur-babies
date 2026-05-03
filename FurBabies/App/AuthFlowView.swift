@@ -9,12 +9,32 @@ private enum AuthNavRoute: Hashable {
 struct AuthFlowView: View {
     var onAuthComplete: (() -> Void)?
 
+    @State private var showingAuth = false
     @State private var path: [AuthNavRoute] = []
     @State private var pendingSetupUser: AuthUser? = nil
 
     private let authService: AuthServiceProtocol = FirebaseAuthService()
 
     var body: some View {
+        ZStack {
+            if showingAuth {
+                authStack
+                    .transition(.asymmetric(
+                        insertion: .move(edge: .trailing),
+                        removal: .move(edge: .leading)
+                    ))
+            } else {
+                OnboardingView(onComplete: { withAnimation(.easeInOut(duration: 0.4)) { showingAuth = true } })
+                    .transition(.asymmetric(
+                        insertion: .move(edge: .leading),
+                        removal: .move(edge: .trailing)
+                    ))
+            }
+        }
+        .animation(.easeInOut(duration: 0.4), value: showingAuth)
+    }
+
+    private var authStack: some View {
         NavigationStack(path: $path) {
             AuthLandingView(
                 authService: authService,
