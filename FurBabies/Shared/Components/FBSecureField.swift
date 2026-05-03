@@ -12,12 +12,17 @@ struct FBSecureField: View {
     @FocusState private var isFocused: Bool
 
     var body: some View {
-        VStack(alignment: .leading, spacing: Theme.Spacing.xxs) {
+        VStack(alignment: .leading, spacing: 6) {
             Text(label)
                 .font(Theme.Typography.footnote)
+                .fontWeight(.medium)
                 .foregroundStyle(labelColor)
 
-            HStack(spacing: 0) {
+            HStack(spacing: Theme.Spacing.sm) {
+                Image(systemName: "lock")
+                    .foregroundStyle(Theme.Colors.textTertiary)
+                    .frame(width: 20, height: 20)
+
                 Group {
                     if isRevealed {
                         TextField(placeholder, text: $text)
@@ -34,18 +39,18 @@ struct FBSecureField: View {
                 .foregroundStyle(Theme.Colors.textPrimary)
                 .autocorrectionDisabled()
                 .textInputAutocapitalization(.never)
-                .padding(.leading, Theme.Spacing.md)
 
                 Button {
                     isRevealed.toggle()
                 } label: {
-                    Image(systemName: isRevealed ? "eye.slash" : "eye")
+                    Image(systemName: isRevealed ? "eye" : "eye.slash")
                         .foregroundStyle(Theme.Colors.textTertiary)
-                        .frame(width: 44, height: 44)
+                        .frame(width: 20, height: 20)
                 }
             }
-            .frame(height: 52)
-            .background(Theme.Colors.surface)
+            .frame(height: 48)
+            .padding(.horizontal, 14)
+            .background(Theme.Colors.muted)
             .clipShape(RoundedRectangle(cornerRadius: Theme.Radius.lg))
             .overlay {
                 RoundedRectangle(cornerRadius: Theme.Radius.lg)
@@ -69,7 +74,6 @@ struct FBSecureField: View {
 
     private var labelColor: Color {
         if errorMessage != nil { return Theme.Colors.error }
-        if isFocused { return Theme.Colors.primary }
         return Theme.Colors.textSecondary
     }
 }
@@ -78,10 +82,10 @@ struct FBSecureField: View {
     @Previewable @State var password = ""
 
     VStack(spacing: Theme.Spacing.lg) {
-        FBSecureField(label: "Password", placeholder: "At least 8 characters", text: $password)
+        FBSecureField(label: "Password", placeholder: "Enter your password", text: $password)
         FBSecureField(
             label: "Password",
-            placeholder: "At least 8 characters",
+            placeholder: "Enter your password",
             text: .constant("short"),
             errorMessage: "Password must be at least 8 characters"
         )

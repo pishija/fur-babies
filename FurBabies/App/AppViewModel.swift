@@ -15,7 +15,15 @@ final class AppViewModel: ObservableObject {
     }
 
     private func resolveInitialState() {
-        // Wired to AuthService once auth feature is built
+        // Wired to AuthService.authStateStream once Firebase is configured
+        applicationState = .unauthenticated
+    }
+
+    func markAuthenticated() {
+        applicationState = .authenticated
+    }
+
+    func markUnauthenticated() {
         applicationState = .unauthenticated
     }
 }

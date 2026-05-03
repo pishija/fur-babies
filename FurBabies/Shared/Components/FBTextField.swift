@@ -4,6 +4,7 @@ struct FBTextField: View {
     let label: String
     let placeholder: String
     @Binding var text: String
+    var icon: String? = nil
     var errorMessage: String? = nil
     var keyboardType: UIKeyboardType = .default
     var autocapitalization: TextInputAutocapitalization = .sentences
@@ -13,29 +14,38 @@ struct FBTextField: View {
     @FocusState private var isFocused: Bool
 
     var body: some View {
-        VStack(alignment: .leading, spacing: Theme.Spacing.xxs) {
+        VStack(alignment: .leading, spacing: 6) {
             Text(label)
                 .font(Theme.Typography.footnote)
+                .fontWeight(.medium)
                 .foregroundStyle(labelColor)
 
-            TextField(placeholder, text: $text)
-                .keyboardType(keyboardType)
-                .textInputAutocapitalization(autocapitalization)
-                .autocorrectionDisabled()
-                .submitLabel(submitLabel)
-                .onSubmit { onSubmit?() }
-                .focused($isFocused)
-                .font(Theme.Typography.body)
-                .foregroundStyle(Theme.Colors.textPrimary)
-                .padding(.horizontal, Theme.Spacing.md)
-                .frame(height: 52)
-                .background(Theme.Colors.surface)
-                .clipShape(RoundedRectangle(cornerRadius: Theme.Radius.lg))
-                .overlay {
-                    RoundedRectangle(cornerRadius: Theme.Radius.lg)
-                        .strokeBorder(borderColor, lineWidth: isFocused ? 1.5 : 1)
+            HStack(spacing: Theme.Spacing.sm) {
+                if let icon {
+                    Image(systemName: icon)
+                        .foregroundStyle(Theme.Colors.textTertiary)
+                        .frame(width: 20, height: 20)
                 }
-                .animation(.easeInOut(duration: 0.15), value: isFocused)
+
+                TextField(placeholder, text: $text)
+                    .keyboardType(keyboardType)
+                    .textInputAutocapitalization(autocapitalization)
+                    .autocorrectionDisabled()
+                    .submitLabel(submitLabel)
+                    .onSubmit { onSubmit?() }
+                    .focused($isFocused)
+                    .font(Theme.Typography.body)
+                    .foregroundStyle(Theme.Colors.textPrimary)
+            }
+            .frame(height: 48)
+            .padding(.horizontal, 14)
+            .background(Theme.Colors.muted)
+            .clipShape(RoundedRectangle(cornerRadius: Theme.Radius.lg))
+            .overlay {
+                RoundedRectangle(cornerRadius: Theme.Radius.lg)
+                    .strokeBorder(borderColor, lineWidth: isFocused ? 1.5 : 1)
+            }
+            .animation(.easeInOut(duration: 0.15), value: isFocused)
 
             if let error = errorMessage {
                 Text(error)
@@ -53,21 +63,28 @@ struct FBTextField: View {
 
     private var labelColor: Color {
         if errorMessage != nil { return Theme.Colors.error }
-        if isFocused { return Theme.Colors.primary }
         return Theme.Colors.textSecondary
     }
 }
 
 #Preview {
     @Previewable @State var name = ""
-    @Previewable @State var email = "bad-email"
+    @Previewable @State var email = ""
 
     VStack(spacing: Theme.Spacing.lg) {
-        FBTextField(label: "Name", placeholder: "Your dog's name", text: $name)
+        FBTextField(label: "First Name", placeholder: "Enter your first name", text: $name)
         FBTextField(
             label: "Email",
             placeholder: "you@example.com",
             text: $email,
+            icon: "envelope",
+            keyboardType: .emailAddress,
+            autocapitalization: .never
+        )
+        FBTextField(
+            label: "Email",
+            placeholder: "you@example.com",
+            text: .constant("bad"),
             errorMessage: "Enter a valid email address",
             keyboardType: .emailAddress,
             autocapitalization: .never

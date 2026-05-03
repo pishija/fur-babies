@@ -11934,7 +11934,7 @@
               "fill": {
                 "type": "image",
                 "enabled": true,
-                "url": "./images/generated-1777739176469.png",
+                "url": "images/generated-1777739176469.png",
                 "mode": "fill"
               },
               "cornerRadius": "$--radius-full",
@@ -11958,7 +11958,7 @@
               "fill": {
                 "type": "image",
                 "enabled": true,
-                "url": "./images/generated-1777739175419.png",
+                "url": "images/generated-1777739175419.png",
                 "mode": "fill"
               },
               "cornerRadius": "$--radius-full",
@@ -11982,7 +11982,7 @@
               "fill": {
                 "type": "image",
                 "enabled": true,
-                "url": "./images/generated-1777739172113.png",
+                "url": "images/generated-1777739172113.png",
                 "mode": "fill"
               },
               "cornerRadius": "$--radius-full",
@@ -12006,7 +12006,7 @@
               "fill": {
                 "type": "image",
                 "enabled": true,
-                "url": "./images/generated-1777739185889.png",
+                "url": "images/generated-1777739185889.png",
                 "mode": "fill"
               },
               "cornerRadius": "$--radius-full",
@@ -12127,7 +12127,7 @@
                   "fill": {
                     "type": "image",
                     "enabled": true,
-                    "url": "./images/generated-1777739250875.png",
+                    "url": "images/generated-1777739250875.png",
                     "mode": "fill"
                   },
                   "width": 96,
@@ -13313,7 +13313,7 @@
               "fill": {
                 "type": "image",
                 "enabled": true,
-                "url": "./images/generated-1777737001756.png",
+                "url": "images/generated-1777737001756.png",
                 "mode": "fill"
               },
               "cornerRadius": "$--radius-xl",
@@ -13981,7 +13981,7 @@
               "fill": {
                 "type": "image",
                 "enabled": true,
-                "url": "./images/generated-1777737111758.png",
+                "url": "images/generated-1777737111758.png",
                 "mode": "fill"
               },
               "cornerRadius": "$--radius-full"
@@ -14477,7 +14477,7 @@
                   "fill": {
                     "type": "image",
                     "enabled": true,
-                    "url": "./images/generated-1777737032945.png",
+                    "url": "images/generated-1777737032945.png",
                     "mode": "fill"
                   },
                   "width": 64,
@@ -14795,7 +14795,7 @@
           "fill": {
             "type": "image",
             "enabled": true,
-            "url": "./images/generated-1777737028052.png",
+            "url": "images/generated-1777737028052.png",
             "mode": "fill"
           }
         },
@@ -14981,7 +14981,7 @@
           "fill": {
             "type": "image",
             "enabled": true,
-            "url": "./images/generated-1777737032788.png",
+            "url": "images/generated-1777737032788.png",
             "mode": "fill"
           },
           "width": "fill_container",
@@ -15365,7 +15365,7 @@
                   "fill": {
                     "type": "image",
                     "enabled": true,
-                    "url": "./images/generated-1777737073214.png",
+                    "url": "images/generated-1777737073214.png",
                     "mode": "fill"
                   },
                   "cornerRadius": "$--radius-full"
@@ -15470,7 +15470,7 @@
                   "fill": {
                     "type": "image",
                     "enabled": true,
-                    "url": "./images/generated-1777737053671.png",
+                    "url": "images/generated-1777737053671.png",
                     "mode": "fill"
                   },
                   "cornerRadius": "$--radius-full"
@@ -15567,7 +15567,7 @@
                   "fill": {
                     "type": "image",
                     "enabled": true,
-                    "url": "./images/generated-1777737066384.png",
+                    "url": "images/generated-1777737066384.png",
                     "mode": "fill"
                   },
                   "cornerRadius": "$--radius-full"
@@ -15672,7 +15672,7 @@
                   "fill": {
                     "type": "image",
                     "enabled": true,
-                    "url": "./images/generated-1777737082827.png",
+                    "url": "images/generated-1777737082827.png",
                     "mode": "fill"
                   },
                   "cornerRadius": "$--radius-full"
@@ -15769,7 +15769,7 @@
                   "fill": {
                     "type": "image",
                     "enabled": true,
-                    "url": "./images/generated-1777737078579.png",
+                    "url": "images/generated-1777737078579.png",
                     "mode": "fill"
                   },
                   "cornerRadius": "$--radius-full"
@@ -16133,7 +16133,7 @@
                   "fill": {
                     "type": "image",
                     "enabled": true,
-                    "url": "./images/generated-1777737025127.png",
+                    "url": "images/generated-1777737025127.png",
                     "mode": "fill"
                   },
                   "width": "fill_container",
@@ -16252,7 +16252,7 @@
                   "fill": {
                     "type": "image",
                     "enabled": true,
-                    "url": "./images/generated-1777737029670.png",
+                    "url": "images/generated-1777737029670.png",
                     "mode": "fill"
                   },
                   "width": "fill_container",
@@ -16445,7 +16445,7 @@
                   "fill": {
                     "type": "image",
                     "enabled": true,
-                    "url": "./images/generated-1777737028050.png",
+                    "url": "images/generated-1777737028050.png",
                     "mode": "fill"
                   },
                   "width": 80,
@@ -16526,7 +16526,7 @@
                   "fill": {
                     "type": "image",
                     "enabled": true,
-                    "url": "./images/generated-1777737029547.png",
+                    "url": "images/generated-1777737029547.png",
                     "mode": "fill"
                   },
                   "width": 80,
@@ -16607,7 +16607,7 @@
                   "fill": {
                     "type": "image",
                     "enabled": true,
-                    "url": "./images/generated-1777737043180.png",
+                    "url": "images/generated-1777737043180.png",
                     "mode": "fill"
                   },
                   "width": 80,
@@ -17640,7 +17640,7 @@
           "fill": {
             "type": "image",
             "enabled": true,
-            "url": "./images/generated-1777737028052.png",
+            "url": "images/generated-1777737028052.png",
             "mode": "fill"
           },
           "cornerRadius": "$--radius-lg"
@@ -18140,7 +18140,7 @@
           "fill": {
             "type": "image",
             "enabled": true,
-            "url": "./images/generated-1777741014295.png",
+            "url": "images/generated-1777741014295.png",
             "mode": "fill"
           },
           "cornerRadius": 9999,
@@ -18174,7 +18174,7 @@
           "fill": {
             "type": "image",
             "enabled": true,
-            "url": "./images/generated-1777741016616.png",
+            "url": "images/generated-1777741016616.png",
             "mode": "fill"
           },
           "cornerRadius": 9999,
@@ -19309,7 +19309,7 @@
           "fill": {
             "type": "image",
             "enabled": true,
-            "url": "./images/generated-1777740839374.png",
+            "url": "images/generated-1777740839374.png",
             "mode": "fill"
           }
         },
@@ -20371,7 +20371,7 @@
                   "fill": {
                     "type": "image",
                     "enabled": true,
-                    "url": "./images/generated-1777740675870.png",
+                    "url": "images/generated-1777740675870.png",
                     "mode": "fill"
                   },
                   "cornerRadius": "$--radius-lg"
@@ -21365,7 +21365,7 @@
               "fill": {
                 "type": "image",
                 "enabled": true,
-                "url": "./images/generated-1777739176469.png",
+                "url": "images/generated-1777739176469.png",
                 "mode": "fill"
               },
               "cornerRadius": "$--radius-full",
@@ -21389,7 +21389,7 @@
               "fill": {
                 "type": "image",
                 "enabled": true,
-                "url": "./images/generated-1777739175419.png",
+                "url": "images/generated-1777739175419.png",
                 "mode": "fill"
               },
               "cornerRadius": "$--radius-full",
@@ -21413,7 +21413,7 @@
               "fill": {
                 "type": "image",
                 "enabled": true,
-                "url": "./images/generated-1777739172113.png",
+                "url": "images/generated-1777739172113.png",
                 "mode": "fill"
               },
               "cornerRadius": "$--radius-full",
@@ -21437,7 +21437,7 @@
               "fill": {
                 "type": "image",
                 "enabled": true,
-                "url": "./images/generated-1777739185889.png",
+                "url": "images/generated-1777739185889.png",
                 "mode": "fill"
               },
               "cornerRadius": "$--radius-full",
@@ -24425,7 +24425,7 @@
               "fill": {
                 "type": "image",
                 "enabled": true,
-                "url": "./images/generated-1777739176469.png",
+                "url": "images/generated-1777739176469.png",
                 "mode": "fill"
               },
               "cornerRadius": "$--radius-full",
@@ -24449,7 +24449,7 @@
               "fill": {
                 "type": "image",
                 "enabled": true,
-                "url": "./images/generated-1777739175419.png",
+                "url": "images/generated-1777739175419.png",
                 "mode": "fill"
               },
               "cornerRadius": "$--radius-full",
@@ -24473,7 +24473,7 @@
               "fill": {
                 "type": "image",
                 "enabled": true,
-                "url": "./images/generated-1777739172113.png",
+                "url": "images/generated-1777739172113.png",
                 "mode": "fill"
               },
               "cornerRadius": "$--radius-full",
@@ -24497,7 +24497,7 @@
               "fill": {
                 "type": "image",
                 "enabled": true,
-                "url": "./images/generated-1777739185889.png",
+                "url": "images/generated-1777739185889.png",
                 "mode": "fill"
               },
               "cornerRadius": "$--radius-full",
@@ -25751,7 +25751,7 @@
               "fill": {
                 "type": "image",
                 "enabled": true,
-                "url": "./images/generated-1777739176469.png",
+                "url": "images/generated-1777739176469.png",
                 "mode": "fill"
               },
               "cornerRadius": "$--radius-full",
@@ -25775,7 +25775,7 @@
               "fill": {
                 "type": "image",
                 "enabled": true,
-                "url": "./images/generated-1777739175419.png",
+                "url": "images/generated-1777739175419.png",
                 "mode": "fill"
               },
               "cornerRadius": "$--radius-full",
@@ -25799,7 +25799,7 @@
               "fill": {
                 "type": "image",
                 "enabled": true,
-                "url": "./images/generated-1777739172113.png",
+                "url": "images/generated-1777739172113.png",
                 "mode": "fill"
               },
               "cornerRadius": "$--radius-full",
@@ -25823,7 +25823,7 @@
               "fill": {
                 "type": "image",
                 "enabled": true,
-                "url": "./images/generated-1777739185889.png",
+                "url": "images/generated-1777739185889.png",
                 "mode": "fill"
               },
               "cornerRadius": "$--radius-full",
@@ -30008,7 +30008,7 @@
                   "fill": {
                     "type": "image",
                     "enabled": true,
-                    "url": "./images/generated-1777743702423.png",
+                    "url": "images/generated-1777743702423.png",
                     "mode": "fill"
                   },
                   "cornerRadius": 50,
@@ -30330,8 +30330,8 @@
     {
       "type": "frame",
       "id": "xroE9",
-      "x": 7805,
-      "y": -330,
+      "x": 40,
+      "y": 3250,
       "name": "Component/Tab Bar",
       "reusable": true,
       "width": 390,
@@ -30539,8 +30539,8 @@
     {
       "type": "frame",
       "id": "tKO1T",
-      "x": 8324,
-      "y": -266,
+      "x": 480,
+      "y": 3250,
       "name": "Component/Status Bar",
       "reusable": true,
       "width": 390,
@@ -30563,8 +30563,8 @@
     {
       "type": "frame",
       "id": "F7mQv",
-      "x": 7276,
-      "y": -288,
+      "x": 40,
+      "y": 3370,
       "name": "Component/NavBar/CancelSave",
       "reusable": true,
       "width": 390,
@@ -30611,8 +30611,8 @@
     {
       "type": "frame",
       "id": "r62Tj",
-      "x": 8324,
-      "y": -114,
+      "x": 480,
+      "y": 3370,
       "name": "Component/NavBar/Back",
       "reusable": true,
       "width": 390,
@@ -30652,6 +30652,732 @@
       "ref": "r62Tj",
       "x": 8830,
       "y": -70
+    },
+    {
+      "id": "oM7dz",
+      "type": "ref",
+      "ref": "F7mQv",
+      "x": 9260,
+      "y": -330
+    },
+    {
+      "id": "RSPlT",
+      "type": "ref",
+      "ref": "r62Tj",
+      "x": 9690,
+      "y": -330
+    },
+    {
+      "id": "F8wToZ",
+      "type": "ref",
+      "ref": "tKO1T",
+      "x": 10120,
+      "y": -330
+    },
+    {
+      "id": "pbcCG",
+      "type": "ref",
+      "ref": "xroE9",
+      "x": 10550,
+      "y": -330
+    },
+    {
+      "type": "frame",
+      "id": "gRZ1B",
+      "x": 40,
+      "y": 3490,
+      "name": "Component/FormField",
+      "reusable": true,
+      "width": 358,
+      "layout": "vertical",
+      "gap": 8,
+      "children": [
+        {
+          "type": "text",
+          "id": "dx57o",
+          "name": "overLbl",
+          "fill": "$--color-text-secondary",
+          "content": "Label",
+          "fontFamily": "Inter",
+          "fontSize": "$--font-size-footnote",
+          "fontWeight": "$--font-weight-semibold"
+        },
+        {
+          "type": "frame",
+          "id": "pzmXP",
+          "name": "overCard",
+          "width": "fill_container",
+          "fill": "$--color-background-surface",
+          "cornerRadius": "$--radius-lg",
+          "stroke": {
+            "align": "inside",
+            "thickness": 1,
+            "fill": "$--color-border-default"
+          },
+          "gap": 12,
+          "padding": [
+            12,
+            16
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "icon_font",
+              "id": "j4AdW5",
+              "name": "overIc",
+              "width": 20,
+              "height": 20,
+              "iconFontName": "text-cursor-input",
+              "iconFontFamily": "lucide",
+              "fill": "$--color-brand-primary"
+            },
+            {
+              "type": "frame",
+              "id": "IYlYD",
+              "name": "overInf",
+              "layout": "vertical",
+              "gap": 2,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "E2Kv7",
+                  "name": "overNm",
+                  "fill": "$--color-text-tertiary",
+                  "content": "Placeholder text...",
+                  "fontFamily": "Inter",
+                  "fontSize": "$--font-size-body",
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "nx7ux",
+                  "x": 0,
+                  "y": 23,
+                  "name": "overDt",
+                  "enabled": false,
+                  "fill": "$--color-status-error",
+                  "content": "2 weeks overdue",
+                  "fontFamily": "Inter",
+                  "fontSize": "$--font-size-footnote",
+                  "fontWeight": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "z4pg2",
+      "x": 450,
+      "y": 3490,
+      "name": "Component/TextArea",
+      "reusable": true,
+      "width": 358,
+      "layout": "vertical",
+      "gap": 8,
+      "children": [
+        {
+          "type": "text",
+          "id": "ahQ4n",
+          "name": "wtLbl",
+          "fill": "$--color-text-secondary",
+          "content": "Label",
+          "fontFamily": "Inter",
+          "fontSize": "$--font-size-footnote",
+          "fontWeight": "$--font-weight-semibold"
+        },
+        {
+          "type": "frame",
+          "id": "llrHy",
+          "name": "wtCrd",
+          "width": "fill_container",
+          "height": 100,
+          "fill": "$--color-background-surface",
+          "cornerRadius": "$--radius-lg",
+          "stroke": {
+            "align": "inside",
+            "thickness": 1,
+            "fill": "$--color-border-default"
+          },
+          "padding": [
+            12,
+            16
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "lqb0E",
+              "name": "wtLf",
+              "layout": "vertical",
+              "gap": 4,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "jr207",
+                  "name": "wtVal",
+                  "fill": "$--color-text-tertiary",
+                  "content": "Enter text here...",
+                  "fontFamily": "Inter",
+                  "fontSize": "$--font-size-callout",
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "R1VcX",
+                  "x": 0,
+                  "y": 31,
+                  "name": "wtDt",
+                  "enabled": false,
+                  "fill": "$--color-text-tertiary",
+                  "content": "Last logged 2 days ago",
+                  "fontFamily": "Inter",
+                  "fontSize": "$--font-size-footnote",
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "icon_font",
+              "id": "kI9UB",
+              "x": 314,
+              "y": 29.5,
+              "name": "wtCh",
+              "enabled": false,
+              "width": 20,
+              "height": 20,
+              "iconFontName": "chevron-right",
+              "iconFontFamily": "lucide",
+              "fill": "$--color-text-tertiary"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "opq00",
+      "x": 40,
+      "y": 3670,
+      "name": "Component/CardSection",
+      "reusable": true,
+      "width": 358,
+      "layout": "vertical",
+      "gap": 8,
+      "children": [
+        {
+          "type": "text",
+          "id": "G0X6D",
+          "name": "upLbl",
+          "fill": "$--color-text-secondary",
+          "content": "Section",
+          "fontFamily": "Inter",
+          "fontSize": "$--font-size-footnote",
+          "fontWeight": "$--font-weight-semibold"
+        },
+        {
+          "type": "frame",
+          "id": "aQMO4",
+          "name": "upC1",
+          "width": "fill_container",
+          "fill": "$--color-background-surface",
+          "cornerRadius": "$--radius-lg",
+          "stroke": {
+            "align": "inside",
+            "thickness": 1,
+            "fill": "$--color-border-default"
+          },
+          "gap": 12,
+          "padding": [
+            12,
+            16
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "icon_font",
+              "id": "sAneN",
+              "name": "upIc1",
+              "width": 20,
+              "height": 20,
+              "iconFontName": "calendar",
+              "iconFontFamily": "lucide",
+              "fill": "$--color-brand-primary"
+            },
+            {
+              "type": "frame",
+              "id": "gxVUN",
+              "name": "upI1",
+              "layout": "vertical",
+              "gap": 2,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "a3ZtXc",
+                  "name": "upN1",
+                  "fill": "$--color-text-primary",
+                  "content": "Card Title",
+                  "fontFamily": "Inter",
+                  "fontSize": "$--font-size-body",
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "LD443",
+                  "name": "upD1",
+                  "fill": "$--color-text-tertiary",
+                  "content": "Card subtitle",
+                  "fontFamily": "Inter",
+                  "fontSize": "$--font-size-footnote",
+                  "fontWeight": "normal"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "TEdaf",
+          "name": "upC2",
+          "width": "fill_container",
+          "fill": "$--color-background-surface",
+          "cornerRadius": "$--radius-lg",
+          "stroke": {
+            "align": "inside",
+            "thickness": 1,
+            "fill": "$--color-border-default"
+          },
+          "gap": 12,
+          "padding": [
+            12,
+            16
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "icon_font",
+              "id": "FEHf6",
+              "name": "upIc2",
+              "width": 20,
+              "height": 20,
+              "iconFontName": "map-pin",
+              "iconFontFamily": "lucide",
+              "fill": "$--color-text-tertiary"
+            },
+            {
+              "type": "frame",
+              "id": "hZTsE",
+              "name": "upI2",
+              "layout": "vertical",
+              "gap": 2,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "N1pZiR",
+                  "name": "upN2",
+                  "fill": "$--color-text-primary",
+                  "content": "Secondary Info",
+                  "fontFamily": "Inter",
+                  "fontSize": "$--font-size-body",
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "XMrjA",
+                  "name": "upD2",
+                  "fill": "$--color-text-tertiary",
+                  "content": "Additional details",
+                  "fontFamily": "Inter",
+                  "fontSize": "$--font-size-caption",
+                  "fontWeight": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "ojqPC",
+      "x": 450,
+      "y": 3670,
+      "name": "Component/ListCardRow",
+      "reusable": true,
+      "width": 358,
+      "fill": "$--color-background-surface",
+      "cornerRadius": "$--radius-lg",
+      "stroke": {
+        "align": "inside",
+        "thickness": 1,
+        "fill": "$--color-border-default"
+      },
+      "gap": 12,
+      "padding": [
+        12,
+        16
+      ],
+      "alignItems": "center",
+      "children": [
+        {
+          "type": "icon_font",
+          "id": "XS4DG",
+          "name": "upIc1",
+          "width": 20,
+          "height": 20,
+          "iconFontName": "file-text",
+          "iconFontFamily": "lucide",
+          "fill": "$--color-brand-primary"
+        },
+        {
+          "type": "frame",
+          "id": "bmnZw",
+          "name": "upI1",
+          "layout": "vertical",
+          "gap": 2,
+          "children": [
+            {
+              "type": "text",
+              "id": "oNOED",
+              "name": "upN1",
+              "fill": "$--color-text-primary",
+              "content": "List Item Title",
+              "fontFamily": "Inter",
+              "fontSize": "$--font-size-body",
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "sjVVw",
+              "name": "upD1",
+              "fill": "$--color-text-secondary",
+              "content": "Supporting text",
+              "fontFamily": "Inter",
+              "fontSize": "$--font-size-footnote",
+              "fontWeight": "normal"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "pq9tO",
+      "x": 40,
+      "y": 3880,
+      "name": "Component/PrimaryButton",
+      "reusable": true,
+      "width": 358,
+      "fill": "$--color-brand-primary",
+      "cornerRadius": "$--radius-full",
+      "padding": [
+        14,
+        0
+      ],
+      "justifyContent": "center",
+      "alignItems": "center",
+      "children": [
+        {
+          "type": "frame",
+          "id": "w8Ib3",
+          "name": "wtLf",
+          "layout": "vertical",
+          "gap": 4,
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "A2Dvix",
+              "name": "wtVal",
+              "fill": "$--color-text-inverse",
+              "content": "Button Label",
+              "fontFamily": "Inter",
+              "fontSize": "$--font-size-headline",
+              "fontWeight": "$--font-weight-bold"
+            },
+            {
+              "type": "text",
+              "id": "DP521",
+              "x": 0,
+              "y": 31,
+              "name": "wtDt",
+              "enabled": false,
+              "fill": "$--color-text-tertiary",
+              "content": "Last logged 2 days ago",
+              "fontFamily": "Inter",
+              "fontSize": "$--font-size-footnote",
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "icon_font",
+          "id": "HV4Iw",
+          "x": 314,
+          "y": 29.5,
+          "name": "wtCh",
+          "enabled": false,
+          "width": 20,
+          "height": 20,
+          "iconFontName": "chevron-right",
+          "iconFontFamily": "lucide",
+          "fill": "$--color-text-tertiary"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "QKBLH",
+      "x": 450,
+      "y": 3880,
+      "name": "Component/SecondaryButton",
+      "reusable": true,
+      "width": 358,
+      "fill": "$--color-background-surface",
+      "cornerRadius": "$--radius-full",
+      "stroke": {
+        "align": "inside",
+        "thickness": 1.5,
+        "fill": "$--color-brand-primary"
+      },
+      "padding": [
+        14,
+        0
+      ],
+      "justifyContent": "center",
+      "alignItems": "center",
+      "children": [
+        {
+          "type": "frame",
+          "id": "VdPsn",
+          "name": "wtLf",
+          "layout": "vertical",
+          "gap": 4,
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "w4Iyf",
+              "name": "wtVal",
+              "fill": "$--color-brand-primary",
+              "content": "Button Label",
+              "fontFamily": "Inter",
+              "fontSize": "$--font-size-headline",
+              "fontWeight": "$--font-weight-bold"
+            },
+            {
+              "type": "text",
+              "id": "I5jdj",
+              "x": 0,
+              "y": 31,
+              "name": "wtDt",
+              "enabled": false,
+              "fill": "$--color-text-tertiary",
+              "content": "Last logged 2 days ago",
+              "fontFamily": "Inter",
+              "fontSize": "$--font-size-footnote",
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "icon_font",
+          "id": "BNgzV",
+          "x": 314,
+          "y": 29.5,
+          "name": "wtCh",
+          "enabled": false,
+          "width": 20,
+          "height": 20,
+          "iconFontName": "chevron-right",
+          "iconFontFamily": "lucide",
+          "fill": "$--color-text-tertiary"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "Oin4F",
+      "x": 40,
+      "y": 3990,
+      "name": "Component/Avatar",
+      "reusable": true,
+      "clip": true,
+      "width": 80,
+      "height": 80,
+      "fill": "$--color-background-muted",
+      "cornerRadius": 9999,
+      "stroke": {
+        "align": "inside",
+        "thickness": 3,
+        "fill": "$--color-brand-primary"
+      }
+    },
+    {
+      "type": "frame",
+      "id": "WAu8m",
+      "x": 170,
+      "y": 4000,
+      "name": "Component/FilterChip",
+      "reusable": true,
+      "fill": "$--color-background-surface",
+      "cornerRadius": "$--radius-full",
+      "stroke": {
+        "align": "inside",
+        "thickness": 1,
+        "fill": "$--color-border-default"
+      },
+      "gap": 8,
+      "padding": [
+        8,
+        16
+      ],
+      "alignItems": "center",
+      "children": [
+        {
+          "type": "icon_font",
+          "id": "KOEAr",
+          "name": "upIc1",
+          "width": 16,
+          "height": 16,
+          "iconFontName": "tag",
+          "iconFontFamily": "lucide",
+          "fill": "$--color-brand-primary"
+        },
+        {
+          "type": "frame",
+          "id": "WGFCV",
+          "name": "upI1",
+          "layout": "vertical",
+          "gap": 2,
+          "children": [
+            {
+              "type": "text",
+              "id": "d4Xma",
+              "name": "upN1",
+              "fill": "$--color-text-primary",
+              "content": "Filter",
+              "fontFamily": "Inter",
+              "fontSize": "$--font-size-callout",
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "QGvRa",
+              "x": 0,
+              "y": 23,
+              "name": "upD1",
+              "enabled": false,
+              "fill": "$--color-text-tertiary",
+              "content": "in 3 weeks",
+              "fontFamily": "Inter",
+              "fontSize": "$--font-size-footnote",
+              "fontWeight": "normal"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "rectangle",
+      "cornerRadius": 24,
+      "id": "ArntU",
+      "x": 0,
+      "y": 3100,
+      "name": "bg",
+      "fill": "$--color-background-surface",
+      "width": 920,
+      "height": 1050,
+      "stroke": {
+        "align": "inside",
+        "thickness": 1,
+        "fill": "$--color-border-default"
+      }
+    },
+    {
+      "type": "text",
+      "id": "BFohU",
+      "x": 40,
+      "y": 3140,
+      "name": "title",
+      "fill": "$--color-text-primary",
+      "content": "COMPONENT LIBRARY",
+      "fontFamily": "Inter",
+      "fontSize": 22,
+      "fontWeight": "$--font-weight-bold"
+    },
+    {
+      "type": "text",
+      "id": "yXxNZ",
+      "x": 40,
+      "y": 3172,
+      "name": "sub",
+      "fill": "$--color-text-secondary",
+      "content": "Reusable building blocks for FurBabies screens",
+      "fontFamily": "Inter",
+      "fontSize": 13,
+      "fontWeight": "$--font-weight-semibold"
+    },
+    {
+      "type": "text",
+      "id": "uXwN9",
+      "x": 40,
+      "y": 3220,
+      "name": "lbl1",
+      "fill": "$--color-text-primary",
+      "content": "Navigation",
+      "fontFamily": "Inter",
+      "fontSize": 16,
+      "fontWeight": "$--font-weight-bold"
+    },
+    {
+      "type": "text",
+      "id": "iRWLh",
+      "x": 40,
+      "y": 3460,
+      "name": "lbl2",
+      "fill": "$--color-text-primary",
+      "content": "Form Inputs",
+      "fontFamily": "Inter",
+      "fontSize": 16,
+      "fontWeight": "$--font-weight-bold"
+    },
+    {
+      "type": "text",
+      "id": "HESOZ",
+      "x": 40,
+      "y": 3640,
+      "name": "lbl3",
+      "fill": "$--color-text-primary",
+      "content": "Cards & Lists",
+      "fontFamily": "Inter",
+      "fontSize": 16,
+      "fontWeight": "$--font-weight-bold"
+    },
+    {
+      "type": "text",
+      "id": "wHx23",
+      "x": 40,
+      "y": 3850,
+      "name": "lbl4",
+      "fill": "$--color-text-primary",
+      "content": "Actions",
+      "fontFamily": "Inter",
+      "fontSize": 16,
+      "fontWeight": "$--font-weight-bold"
+    },
+    {
+      "type": "text",
+      "id": "k9ASp",
+      "x": 40,
+      "y": 3960,
+      "name": "lbl5",
+      "fill": "$--color-text-primary",
+      "content": "Display",
+      "fontFamily": "Inter",
+      "fontSize": 16,
+      "fontWeight": "$--font-weight-bold"
     }
   ],
   "variables": {

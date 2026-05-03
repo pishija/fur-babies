@@ -18,7 +18,7 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		30DC7DD196839541B0DE04A6 /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+		30DC7DD196839541B0DE04A6 /* Exceptions for "FurBabies" folder in "FurBabies" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Resources/Info.plist,
@@ -31,11 +31,7 @@
 		1586CEFEA4EFC3C7A2375887 /* FurBabies */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
-				30DC7DD196839541B0DE04A6 /* PBXFileSystemSynchronizedBuildFileExceptionSet */,
-			);
-			explicitFileTypes = {
-			};
-			explicitFolders = (
+				30DC7DD196839541B0DE04A6 /* Exceptions for "FurBabies" folder in "FurBabies" target */,
 			);
 			path = FurBabies;
 			sourceTree = "<group>";

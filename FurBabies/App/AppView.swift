@@ -16,7 +16,7 @@ struct AppView: View {
             case .initializing:
                 SplashView()
             case .unauthenticated:
-                AuthFlowView()
+                AuthFlowView(onAuthComplete: { viewModel.markAuthenticated() })
             case .authenticated:
                 NavigationStack(path: $router.path) {
                     MainTabView()
