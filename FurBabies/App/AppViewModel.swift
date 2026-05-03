@@ -1,4 +1,5 @@
 import Foundation
+import os
 
 enum ApplicationState {
     case initializing
@@ -16,7 +17,9 @@ final class AppViewModel: ObservableObject {
     }
 
     private func resolveInitialState() {
-        applicationState = DIContainer.shared.authService.currentUser != nil ? .authenticated : .unauthenticated
+        let hasSession = DIContainer.shared.authService.currentUser != nil
+        applicationState = hasSession ? .authenticated : .unauthenticated
+        AppLogger.app.info("resolveInitialState — \(hasSession ? "authenticated" : "unauthenticated")")
     }
 
     // Watch for token expiry / sign-out triggered outside the app (e.g. account deleted remotely)
@@ -25,6 +28,7 @@ final class AppViewModel: ObservableObject {
             for await user in DIContainer.shared.authService.authStateStream {
                 guard let self else { return }
                 if user == nil {
+                    AppLogger.app.info("observeSignOut — auth stream emitted nil, moving to unauthenticated")
                     self.applicationState = .unauthenticated
                 }
             }
@@ -32,10 +36,12 @@ final class AppViewModel: ObservableObject {
     }
 
     func markAuthenticated() {
+        AppLogger.app.info("markAuthenticated")
         applicationState = .authenticated
     }
 
     func markUnauthenticated() {
+        AppLogger.app.info("markUnauthenticated")
         applicationState = .unauthenticated
     }
 }
