@@ -105,7 +105,7 @@ final class AuthViewModel: ObservableObject {
 
             do {
                 let user = try await authService.signInWithApple(credential: credential)
-                onResult?(.authenticated(user))
+                onResult?(user.isNewUser ? .needsProfileSetup(user) : .authenticated(user))
             } catch let authError as AuthError {
                 errorMessage = authError.errorDescription
             } catch {

@@ -13,7 +13,7 @@ struct AuthFlowView: View {
     @State private var path: [AuthNavRoute] = []
     @State private var pendingSetupUser: AuthUser? = nil
 
-    private let authService: AuthServiceProtocol = FirebaseAuthService()
+    private let authService: AuthServiceProtocol = DIContainer.shared.authService
 
     var body: some View {
         ZStack {
